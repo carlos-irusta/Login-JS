@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons8-cofee-16.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form id="formulario">
+        <h2>Login</h2>
+        <div class="form-group">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            autocomplete="off"
+            placeholder="ejemplo@gmail.com"
+          />
+          <label for="email">Introduce tu email</label>
+          <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Mínimo 8 caracteres"
+            autocomplete="off"
+          />
+          <label for="password">contraseña</label>
+          <div class="error-message" id="passwordError"></div>
+        </div>
+
+        <div class="forget">
+          <label for="remember">
+            <input type="checkbox" id="remember" />
+            <p>Recordarme</p>
+          </label>
+          <a href="#"> ¿Has olvidado tu contraseña?</a>
+        </div>
+        <button type="submit">Enviar</button>
+
+        <div class="register">
+          <p>No tienes cuenta? <a href="#">Registrate</a></p>
+        </div>
+        <div id="mensajeExito" class="mensaje-exito">
+          Se ha registrado con exito!
+        </div>
+      </form>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
